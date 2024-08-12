@@ -1,9 +1,5 @@
-fn main() {
-    println!("Hello, world!");
-    let x = get_time("abc");
-    print!("{}",x);
-}
+use commemorate::run;
 
-fn get_time(s: &str) -> &str {
-    s
+fn main() -> commemorate::CommemorateResult<()> {
+    run()
 }
